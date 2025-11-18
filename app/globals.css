@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'PoorRichard';
+  src: url('/fonts/PoorRichard.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*backdrop blur */
+.backdrop-blur-20 {
+  backdrop-filter: blur(20px);
+}
+
