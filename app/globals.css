@@ -3,20 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-dgreen: #3e481c;
+  --color-lgreen: #869064;
+  --color-secondary: #9B6A4A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-primary: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-dgreen: var(--color-dgreen);
+  --color-lgreen: var(--color-lgreen);
+  --color-secondary: var(--color-secondary);
 }
 
 body {
@@ -31,8 +30,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 /*backdrop blur */
 .backdrop-blur-20 {
   backdrop-filter: blur(20px);
 }
-
