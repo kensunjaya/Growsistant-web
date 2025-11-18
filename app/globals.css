@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FAF5F1;
   --foreground: #171717;
   --color-dgreen: #3e481c;
   --color-lgreen: #869064;
-  --color-secondary: #9B6A4A;
+  --color-secondary: #864921;
 }
 
 @theme inline {
@@ -21,17 +21,20 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@font-face {
-  font-family: 'PoorRichard';
-  src: url('/fonts/PoorRichard.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
 }
 
 /*backdrop blur */
 .backdrop-blur-20 {
   backdrop-filter: blur(20px);
+}
+
+.fade-mask {
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to bottom, black 75%, transparent);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }

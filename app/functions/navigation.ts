@@ -1,0 +1,10 @@
+export const handleScrollTo = (id: string, timeout: number = 400) => {
+  const el = id ? document.querySelector(id) : document.body;
+  el?.scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => {
+    el?.scrollIntoView({ behavior: "smooth" });
+  }, timeout);
+  if (id) {
+    window.history.replaceState(null, "", id);
+  }
+};
