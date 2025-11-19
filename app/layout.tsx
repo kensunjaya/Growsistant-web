@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Growsistant",
-  description: "Your Next Smart Indoor Garden. 15% off limited November offer!",
+  description: "Your Next Smart Indoor Garden. 17% off limited November offer!",
 };
 
 export default function RootLayout({

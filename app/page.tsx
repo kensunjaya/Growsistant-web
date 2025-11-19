@@ -51,7 +51,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-background font-primary overflow-x-hidden p-10">
+    <div className="min-h-screen bg-background font-primary overflow-x-hidden p-5">
 
       {/* NAVBAR */}
       <Navbar />
@@ -84,7 +84,7 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="w-full flex portrait:flex-col landscape:flex-row items-center justify-center xl:gap-50 md:gap-20 landscape:px-24 py-16">
+      <section className="w-full flex portrait:flex-col landscape:flex-row items-center justify-center xl:gap-50 md:gap-20 landscape:px-24 my-20 landscape:mt-40 ">
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-4 portrait:items-center portrait:text-center">
           <h2 className="text-3xl landscape:text-4xl font-medium landscape:tracking-[0.2em] portrait:tracking-[0.2em] whitespace-nowrap text-black">
@@ -120,7 +120,7 @@ export default function Home() {
 
 
       {/* CAROUSEL SECTION */}
-      <section className="flex flex-col items-center portrait:text-center" id="products">
+      <section className="flex flex-col items-center portrait:text-center landscape:mt-40" id="products">
         <h2 className="text-4xl font-normal tracking-[0.2em] text-dgreen">
           Growsistant Series 1.0
         </h2>
@@ -133,7 +133,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
         >
           {/* LEFT IMAGE */}
-          <div className="flex items-center justify-center landscape:gap-6 min-h-[400px]">
+          <div className="flex items-center justify-center landscape:gap-6 portrait:min-h-[340px] landscape:min-h-[400px]">
             <Image
               src={images[0]}
               width={orientation === 'portrait' ? 110 : 140}
@@ -162,13 +162,13 @@ export default function Home() {
               onClick={rotateLeft}
             />
           </div>
-          <div className="flex items-center justify-center landscape:gap-20 portrait:gap-10 text-gray-500">
+          <div className="flex items-center justify-center landscape:gap-20 portrait:gap-5 text-gray-500">
             <div className="flex flex-col items-center">
               <div>Dimensions</div>
-              <strong>11 x 11 x 35cm</strong>
+              <strong>11 x 11 x 35 cm</strong>
             </div>
             <div className="flex flex-col items-center">
-              <div>Power Consumption</div>
+              <div>Power</div>
               <strong>~12W Typical</strong>
             </div>
             <div className="flex flex-col items-center">
@@ -176,6 +176,7 @@ export default function Home() {
               <strong>Plastic</strong>
             </div>
           </div>
+          <p className="text-md mt-5 text-gray-500 text-center">{"* DC Power Adapter Included"}</p>
         </motion.div>
 
         {/* PRICING */}
@@ -202,7 +203,7 @@ export default function Home() {
 
       {/* PLANT COLLECTION SECTION */}
 
-      <section className="w-full flex flex-col items-center mt-20 portrait:text-center" id="plants">
+      <section className="w-full flex flex-col items-center portrait:mt-20 landscape:mt-40 portrait:text-center" id="plants">
         <h2 className="text-4xl font-normal tracking-[0.2em] text-secondary mb-10">
           Our Plant Collections
         </h2>
@@ -234,7 +235,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section className="w-full flex portrait:flex-col justify-center mt-20" id="contact">
+      <section className="w-full flex portrait:flex-col justify-center mt-20 pb-20" id="contact">
         <div className="w-full max-w-6xl shadow-md rounded-3xl landscape:p-10 portrait:p-5 flex portrait:flex-col gap-10">
 
           {/* LEFT SIDE */}
@@ -268,7 +269,7 @@ export default function Home() {
               <div className="p-4 bg-gray-50 rounded-xl border flex flex-col min-h-[130px]">
                 <FaPhone className="text-2xl mb-auto" />
                 <h3 className="py-1 font-semibold text-gray-500">Phone</h3>
-                <p className="text-sm text-gray-600">+61 749 530 742</p>
+                <p className="text-sm text-gray-600">+62 895-6040-91019</p>
               </div>
 
               {/* Card 4 */}
@@ -321,7 +322,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-
     </div>
   );
 }
